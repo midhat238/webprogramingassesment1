@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Wondering Photographer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f8ede3, #dfd3c3);
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+
+    /* Header Swirl */
+    .swirl {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    .swirl svg {
+      width: 260px;
+      height: 50px;
+    }
+
+    /* Cart */
+    .cart-bar {
+      text-align: right;
+      padding: 8px 20px;
+    }
+
+    .cart-bar span {
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* Photo Cards */
+    .photo-card {
+      background: #ffffff;
+      margin: 18px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-card .caption {
+      background-color: #fefae0;
+      color: #344e41;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 10px;
+      line-height: 1.5;
+    }
+
+    .photo-card .add-btn {
+      background-color: #344e41;
+      color: white;
+      border: none;
+      font-size: 12px;
+      padding: 6px 12px;
+      margin: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .photo-card .add-btn:hover {
+      background-color: #588157;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      text-align: center;
+      background-color: #344e41;
+      color: white;
+      border-radius: 10px 10px 0 0;
+    }
+
+    footer .copyright {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      color: #fefae0;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="swirl">
+    <svg viewBox="0 0 260 50" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path d="M10 25 Q30 5 50 25 Q70 45 90 25 Q110 5 130 25 Q150 45 170 25 Q190 5 210 25 Q230 45 250 25"
+        stroke="#344e41" stroke-width="2.2" fill="none"/>
+      <circle cx="130" cy="35" r="4" fill="#344e41"/>
+      <circle cx="10" cy="25" r="3" fill="#344e41"/>
+      <circle cx="250" cy="25" r="3" fill="#344e41"/>
+    </svg>
+  </div>
+
+  <div class="cart-bar">
+    <span>🛒</span>
+  </div>
+
+  <div class="photo-card">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=700&q=80" alt="Greenland coast"/>
+    <div class="caption">
+      This was from a fabulous trip to the coast of Greenland with my family. The water was lovely — but very cold!
+    </div>
+    <button class="add-btn">Add to basket</button>
+  </div>
+
+  <div class="photo-card">
+    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=700&q=80" alt="Golden Gate Bridge"/>
+    <div class="caption">
+      A picture of the Golden Gate Bridge. New York! New York!
+    </div>
+    <button class="add-btn">Add to basket</button>
+  </div>
+
+  <div class="photo-card">
+    <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=700&q=80" alt="Glacier valley"/>
+    <div class="caption">
+      Another great photo from Greenland. It's a river valley where a glacier used to be.
+    </div>
+    <button class="add-btn">Add to basket</button>
+  </div>
+
+  <div class="photo-card">
+    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=700&q=80" alt="Waterfall"/>
+    <div class="caption">
+      The waterfall made such a lovely sound. I could have fallen asleep!
+    </div>
+    <button class="add-btn">Add to basket</button>
+  </div>
+
+  <footer>
+    <p class="copyright">Copyright The Wondering Photographer 2018.</p>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About me</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
